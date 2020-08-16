@@ -30,6 +30,7 @@
         background: rgba(0, 0, 0, 0.25);
         margin-bottom: 10px;
         height: 1000px;
+        display: none;
       }
 
       footer {
@@ -42,12 +43,27 @@
         body {
           background: rgba(0, 255, 0, 0.25);
         }
+        aside {
+           display: block;
+        }
       }
 
       /* Applies onlu when the screen is 1200px or wider */
       @media screen and (min-width: 1200px) {
         body {
           background: rgba(0, 0, 255, 0.25);
+        }
+        section {
+           float: left;
+           width: 69%;
+           margin-right: 10px;
+        }
+        aside {
+           float: right;
+           width: 30%;
+        }
+        footer {
+           clear: both;
         }
       }
     </style>
