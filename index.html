@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>HTML & CSS Review</title>
-       
-        <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-       
-   </head>
-   <body>
-      
-       <header>Header</header>
-       <section>Section</section>
-       <aside>Aside</aside>
-       <footer>Footer</footer>
-              
-   </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML & CSS Review</title>
+    <style>
+      /* Applies to EVERYING unless overwritten elsewhere */
+      * {
+        margin: 0;
+      }
+
+      body {
+        background: rgba(255, 0, 0, 0.25);
+      }
+
+      header {
+        background: rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+        height: 50px;
+      }
+
+      section {
+        background: rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+        height: 1000px;
+      }
+
+      aside {
+        background: rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+        height: 1000px;
+      }
+
+      footer {
+        background: rgba(0, 0, 0, 0.25);
+        height: 25px;
+      }
+
+      /* Applies only when the screen is 768px or wider */
+      @media screen and (min-width: 768px) {
+        body {
+          background: rgba(0, 255, 0, 0.25);
+        }
+      }
+
+      /* Applies onlu when the screen is 1200px or wider */
+      @media screen and (min-width: 1200px) {
+        body {
+          background: rgba(0, 0, 255, 0.25);
+        }
+      }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+  </head>
+  <body>
+    <header>Header</header>
+    <section>Section</section>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+  </body>
 </html>
